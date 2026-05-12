@@ -1,0 +1,10 @@
+.next
+node_modules
+.env.local
+.env
+dist
+*.mp3
+public/audio
+fixtures
+data
+.DS_Store
