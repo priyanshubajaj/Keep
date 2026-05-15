@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "ingestedAt": "2026-03-19T11:42:08Z",
+    "source": "North and South (1855) — Elizabeth Gaskell. Public domain.",
+    "pipeline": "scripts/08-seed-demo.ts",
+    "segmentCount": 127,
+    "audioMinutes": 183,
+    "embeddingModel": "text-embedding-3-small",
+    "personaBuiltAt": "2026-03-19T12:03:41Z"
+  },
+  "persona": {
+    "id": "margaret-hale",
+    "name": "Margaret Hale",
+    "lifespan": { "born": 1855, "died": 1937, "living": false }
+  },
+  "coverage": {
+    "childhood":     88,
+    "family":        95,
+    "work":          62,
+    "loss":          79,
+    "travel":        55,
+    "love":          91,
+    "beliefs":       73,
+    "daily_life":    84,
+    "big_decisions": 68,
+    "politics":      41,
+    "joy":           87
+  },
+  "timeline": [
+    { "year": 1855, "event": "Born in Helstone, Hampshire",    "segmentId": "seg_001", "segmentText": "I was born in the parsonage at Helstone on a morning in September when the mist sat low on the churchyard." },
+    { "year": 1863, "event": "Father begins teaching her Greek","segmentId": "seg_014", "segmentText": "My father decided, with characteristic suddenness, that I was old enough to learn Greek. I was eight." },
+    { "year": 1871, "event": "First journey to London",         "segmentId": "seg_031", "segmentText": "The train to London was the loudest thing I had ever heard." },
+    { "year": 1878, "event": "Family moves to Milton",          "segmentId": "seg_048", "segmentText": "We arrived in Milton on a grey November morning. The smoke from the mills sat over the town like a judgment." },
+    { "year": 1879, "event": "Death of her mother",            "segmentId": "seg_057", "segmentText": "My mother died in February. She had been ill for months, but still the morning surprised me." },
+    { "year": 1882, "event": "Begins writing memoir",          "segmentId": "seg_072", "segmentText": "I began writing not because I thought anyone would read it, but because the memories were becoming too heavy to carry only in my head." },
+    { "year": 1891, "event": "Returns to Helstone",            "segmentId": "seg_089", "segmentText": "The village had changed less than I had. I stood at the gate of the parsonage for a long time before I went in." },
+    { "year": 1903, "event": "Memoir published",               "segmentId": "seg_103", "segmentText": "The book appeared in October, a small edition, with a green cover I had not chosen." },
+    { "year": 1935, "event": "Final chapter added",            "segmentId": "seg_121", "segmentText": "I am adding this at eighty. I had thought I was done, but there is one more thing I want to say." },
+    { "year": 1937, "event": "Died at Helstone, age 81",       "segmentId": "seg_127", "segmentText": "She died as she had wished, in the village she had loved most." }
+  ],
+  "people": {
+    "nodes": [
+      { "id": "margaret", "name": "Margaret",     "mentionCount": 127 },
+      { "id": "father",   "name": "Richard Hale", "mentionCount": 89  },
+      { "id": "mother",   "name": "Maria Hale",   "mentionCount": 74  },
+      { "id": "aunt",     "name": "Aunt Shaw",     "mentionCount": 41  },
+      { "id": "dixon",    "name": "Dixon",         "mentionCount": 38  },
+      { "id": "edith",    "name": "Edith",         "mentionCount": 29  },
+      { "id": "henry",    "name": "Henry Lennox",  "mentionCount": 22  }
+    ],
+    "edges": [
+      { "from": "margaret", "to": "father",  "weight": 89, "valence": 0.7 },
+      { "from": "margaret", "to": "mother",  "weight": 74, "valence": 0.6 },
+      { "from": "margaret", "to": "aunt",    "weight": 41, "valence": 0.3 },
+      { "from": "margaret", "to": "dixon",   "weight": 38, "valence": 0.8 },
+      { "from": "margaret", "to": "edith",   "weight": 29, "valence": 0.5 },
+      { "from": "margaret", "to": "henry",   "weight": 22, "valence": 0.2 },
+      { "from": "mother",   "to": "father",  "weight": 45, "valence": 0.6 },
+      { "from": "aunt",     "to": "edith",   "weight": 18, "valence": 0.7 }
+    ]
+  }
+}

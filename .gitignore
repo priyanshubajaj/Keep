@@ -6,5 +6,6 @@ dist
 *.mp3
 public/audio
 fixtures
-data
+data/**
+!data/*.json
 .DS_Store
