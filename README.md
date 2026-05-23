@@ -2,6 +2,8 @@
 
 Legacy voice preservation app. Write a memoir → segment + embed → synthesize persona with Opus → clone voice → pre-compute responses → play cached audio.
 
+Demo Video-> https://drive.google.com/file/d/1nATZ-CenNdMZ-VlrizX0OajbM6sidVgv/view?usp=drive_link
+
 ## Setup
 
 ```bash
@@ -48,14 +50,6 @@ npm run dev
 http://localhost:3000/memorial/[personaId]
 ```
 
-## Demo Script
-
-- **0:00–0:30**: Cloned voice intro. Cut. Landing page.
-- **0:30–1:15**: Ask cached question → audio plays + text renders.
-- **1:15–1:35**: Tour interview, dashboard, family tree.
-- **2:00–2:45**: Ask paraphrase → re-ranker fires → audio plays.
-- **2:45–3:15**: Audience question. Cache hit or text stream.
-- **3:15**: Done.
 
 ## Env Vars
 
